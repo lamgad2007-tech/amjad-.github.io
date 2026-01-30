@@ -1,0 +1,168 @@
+  
+body {
+    background-image: url('wallpaperflare.com_wallpaper (1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+h1   {
+    color: white; 
+    margin: 0 800px;
+    }
+    h1:hover {
+    color: #4da6ff; 
+    cursor: pointer;
+    }
+.social-icons img {
+    width: 60px;  
+    height: 60px; 
+    margin: 0 250px; 
+}
+.social-icons a {
+    cursor: pointer;
+    }
+.social-icons a img:hover {
+    
+    filter: drop-shadow(0 0 10px #4da6ff) drop-shadow(0 0 20px #4da6ff);
+    transform: scale(1.1); 
+    cursor: pointer;
+    }
+.social-icons {
+    display: flex;         
+    align-items: center;  
+    justify-content: left; 
+    gap: 15px;            
+}
+.social-icons {
+    display: flex;        
+    align-items: center;   
+    justify-content: left; 
+    gap: 15px;             
+}
+.container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+.main-text {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center; 
+}
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #4da6ff);
+    cursor: pointer;
+ }
+/* تنسيق الحاوية الرئيسية (المربع الذي يحتوي النص والأيقونات) */
+.container {
+    position: absolute;
+    top: 50px; /* اضبط هذه القيمة للتحكم في المسافة من أعلى */
+    right: 20px; /* اضبط هذه القيمة للتحكم في المسافة من اليمين */
+    width: 200px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية داكنة شفافة */
+    border-radius: 10px; /* حواف دائرية */
+    text-align: center; /* توسيط المحتوى داخل المربع */
+    /* إزالة الحدود التي ذكرتها سابقاً */
+}
+
+/* تنسيق النص داخل المربع */
+.main-text {
+    color: white;
+    margin-bottom: 15px; /* مسافة بين النص والأيقونات */
+    font-size: 1rem;
+}
+
+/* ترتيب الأيقونات عمودياً باستخدام Flexbox */
+.social-icons {
+    display: flex;
+    flex-direction: column; /* يجعل العناصر تحت بعضها البعض */
+    gap: 20px; /* مسافة بين العناصر */
+    align-items: center; /* توسيط الأيقونات أفقياً */
+}
+
+/* تنسيق حجم الأيقونات وإضافة الحساسية (hover) */
+.social-icons img {
+    width: 30px; /* حجم موحد للأيقونات */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* تكبير عند التمرير */
+    filter: drop-shadow(0 0 8px #4da6ff); /* توهج أزرق */
+    cursor: pointer;
+}
+/* تنسيق الحاوية الرئيسية (المربع الخارجي الداكن) */
+.container {
+    width: 250px;
+    padding: 10px 0;
+    background-color: rgba(30, 30, 30, 0.95); /* لون داكن جداً وشفاف قليلاً */
+    border-radius: 12px; /* حواف مستديرة ناعمة */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* يمكنك إضافة position absolute هنا لتحديد مكانها بدقة */
+    /* position: absolute; top: 50px; right: 20px; */
+       /* التموضع الجديد: تحت الكلمة على اليسار */
+    position: absolute; 
+    top: 200px;  /* اضبط هذه القيمة لضبط المسافة العمودية */
+    left: 800px;  /* مسافة من اليسار */
+    right: auto; /* إلغاء خاصية اليمين السابقة */
+}
+
+/* تنسيق كل عنصر قائمة (صف التيك توك/انستغرام) */
+.menu-item a {
+    display: flex;         /* ترتيب الأيقونة والنص بجانب بعضهما */
+    align-items: center;   /* محاذاة عمودية في المنتصف */
+    padding: 8px 15px;     /* مسافة داخلية */
+    text-decoration: none; /* إزالة الخط السفلي */
+    color: white;          /* لون النص أبيض */
+    transition: background-color 0.3s; /* تأثير سلس عند التمرير */
+    font-size: 0.9rem;
+}
+
+/* تأثير الحساسية (hover) عند تمرير الماوس على الصف كله */
+.menu-item a:hover {
+    background-color: rgba(70, 70, 70, 0.95); /* لون أفتح قليلاً عند التمرير */
+}
+
+/* تنسيق الأيقونات (الحجم والمسافة) */
+.menu-item img {
+    width: 20px;           /* حجم صغير للأيقونة */
+    height: auto;
+    margin-right: 12px;    /* مسافة بين الأيقونة والنص */
+    /* تأثير التوهج الأخضر الخفيف على الأيقونة نفسها */
+    filter: drop-shadow(0 0 5px #02a0a8); 
+}
+
+/* سهم جانبي وهمي (اختياري: يعطيك تأثير السهم في الصورة الأصلية) */
+.menu-item a::after {
+    content: '›'; /* رمز السهم */
+    margin-left: auto; /* يدفع السهم إلى أقصى اليمين */
+    color: #02a0a8; /* لون أخضر يتناسب مع الأيقونات */
+    font-size: 1.2rem;
+}
+h1 {
+    border: 2px solid white;    /* حدود بيضاء حول العنوان */
+    padding: 10px 50px;         /* مسافة داخلية */
+    display: inline-block;      /* يجعل المربع يحيط بالنص فقط */
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شبه شفافة */
+    border-radius: 5px;         /* زوايا مستديرة قليلاً */
+    color: white;               /* التأكد من لون النص الأبيض */
+}
